@@ -163,6 +163,10 @@ func getReleases(retOpts RetrieveOptions, kubeConfig common.KubeConfig) ([]*rls.
 		}
 		for _, item := range configMaps.Items {
 			release := getRelease(item.Data["release"])
+			release, err = ReleaseDecrypt(release)
+			if err != nil {
+				log.Println("ReleaseDecrypt Error, ", err)
+			}
 			if release == nil {
 				continue
 			}

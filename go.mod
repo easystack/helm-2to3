@@ -147,3 +147,7 @@ require (
 	sigs.k8s.io/structured-merge-diff/v4 v4.2.1 // indirect
 	sigs.k8s.io/yaml v1.3.0 // indirect
 )
+
+replace google.golang.org/protobuf => github.com/sooheng/protobuf-go v1.25.0-ed
+
+replace helm.sh/helm/v3 => github.com/liangjingtao11/helm/v3 v3.9.4-es
