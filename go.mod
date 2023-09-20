@@ -150,4 +150,4 @@ require (
 
 replace google.golang.org/protobuf => github.com/sooheng/protobuf-go v1.25.0-ed
 
-replace helm.sh/helm/v3 => github.com/liangjingtao11/helm/v3 v3.9.4-es
+replace helm.sh/helm/v3 => github.com/liangjingtao11/helm/v3 v3.9.4-ed
